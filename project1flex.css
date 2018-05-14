@@ -1,0 +1,149 @@
+
+ body, html{
+  font-family: Lato, sans-serif;
+  color: grey;
+
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  overflow: hidden;
+  flex-wrap: wrap;
+  flex-direction:row;
+}
+
+.page-content {
+  flex-direction: column;
+  padding: 20px 50px;
+  display: flex;
+}
+a:link, a:visited {
+    background-color: white;
+    color: black;
+    border: 2px solid teal;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover, a:active {
+    background-color: teal;
+    color: white;
+}
+
+
+.main-title {
+  margin-left: auto;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.main-title h1 {
+  font-size: 58px;
+  font-weight: 100;
+  margin-bottom: 0;
+}
+
+.main-title h2 {
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: 0;
+}
+
+.main-header {
+  align-items: center;
+  border-bottom: 5px solid silver;
+  margin-bottom: 30px;
+  display: flex;
+  width: 100%;
+}
+.logo {
+  width:100px;
+}
+
+.hero-image {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  height: auto;
+}
+
+.hero-image img {
+  text-align: right;
+  width:auto;
+  display: flex;
+}
+
+.phase1 img {
+  display: inline-block;
+}
+.phase1 {
+  flex-direction:column;
+  align-content: center;
+  display: inline-block;
+  text-align: center;
+}
+.btn-info {
+  display: inline-block;
+  border-radius:5px;
+}
+
+h2 {
+  font-size: 38px;
+  font-weight: 300;
+  color: #9e9e9e;
+  margin: 30px 5px 10px 5px;
+}
+
+h3 {
+  font-size: 36px;
+  text-transform: uppercase;
+  margin: 10px 0;
+  color: #6e6e6e;
+}
+.contactlinks {
+  display: flex;
+  justify-content: space-between;
+
+}
+  .fa {
+  padding: 20px;
+  font-size: 50px;
+  width: 33.3%;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+}
+ .contactlinks li {
+  list-style: none;
+  display: inline-block;
+  justify-content: center;
+  margin-left: 250px;
+  text-align: center;
+  align-items: center;
+}
+ @media only screen and (max-width:600px) {
+   div.row, div.contactlinks ul{
+     width:100%;
+     align-items: flex-start;
+   }
+   div.topimage img, div.mystory {
+     width:100%;
+     flex-wrap: wrap;
+   }
+ }
+ @media only screen and (min-width:1000px) {
+     div.phase1 {
+     width:33.3%;
+     justify-content: space-between;
+   }
+   div.topimage, div.mystory {
+     width:50%;
+   }
+   div.contactlinks li {
+     justify-content:center;
+   }
+ }
