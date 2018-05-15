@@ -9,15 +9,14 @@
   display: flex;
   align-items: center;
   justify-content:center;
-  overflow: hidden;
   flex-wrap: wrap;
   flex-direction:row;
 }
 
 .page-content {
   flex-direction: column;
-  padding: 20px 50px;
   display: flex;
+  flex-wrap: wrap;
 }
 a:link, a:visited {
     background-color: white;
@@ -68,27 +67,30 @@ a:hover, a:active {
   display: flex;
   align-content: center;
   justify-content: center;
-  height: auto;
 }
 
 .hero-image img {
   text-align: right;
-  width:auto;
+  width:100%;
   display: flex;
 }
-
-.phase1 img {
-  display: inline-block;
+.mystory {
+  text-align: left;
+  width:100%;
 }
 .phase1 {
   flex-direction:column;
   align-content: center;
-  display: inline-block;
+  display:flex;
   text-align: center;
+  height:auto;
+  justify-content: center;
 }
-.btn-info {
-  display: inline-block;
+.phase1 a {
+  display: flex;
   border-radius:5px;
+  text-align: center;
+  flex-direction: column;
 }
 
 h2 {
@@ -106,44 +108,28 @@ h3 {
 }
 .contactlinks {
   display: flex;
-  justify-content: space-between;
-
-}
-  .fa {
-  padding: 20px;
-  font-size: 50px;
-  width: 33.3%;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 5px;
+  justify-content:center;
+  flex-wrap: wrap;
 }
  .contactlinks li {
   list-style: none;
   display: inline-block;
   justify-content: center;
-  margin-left: 250px;
   text-align: center;
   align-items: center;
 }
- @media only screen and (max-width:600px) {
-   div.row, div.contactlinks ul{
-     width:100%;
-     align-items: flex-start;
+@media only screen and (min-width:600px) {
+  div.phase1,.topimage, .mystory {
+    width:100%;
+    flex: 33.33%;
+    align-items: center;
+  }
+}
+@media only screen and (min-width:800px) {
+     div.phase1, .btn-info {
+     justify-content: space-around;
    }
-   div.topimage img, div.mystory {
-     width:100%;
-     flex-wrap: wrap;
-   }
- }
- @media only screen and (min-width:1000px) {
-     div.phase1 {
-     width:33.3%;
-     justify-content: space-between;
-   }
-   div.topimage, div.mystory {
-     width:50%;
-   }
-   div.contactlinks li {
-     justify-content:center;
-   }
- }
+   .contactlinks li {
+  text-align: center;
+}
+}
